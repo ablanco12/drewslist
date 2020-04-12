@@ -5,14 +5,14 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    render json: @posts
+    # render json: @posts
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
-    render json: @post
+    # render json: @post
   end
 
   # GET /posts/new
@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
+    
     @post = Post.new(post_params)
 
     respond_to do |format|
@@ -72,6 +73,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :price, :location)
     end
 end
