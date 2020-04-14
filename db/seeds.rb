@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-post1 = Post.create(title: "book", body: "laksdlfja", price: "500", location: "here")
+post1 = Post.create(title: "65in LG TV 4k Smart TV  ", body: "Price is OBO. Works fine but has blue tint", price: "250", location: "San Antonio, TX")
+post2 = Post.create(title: "iphone 11 pro", body: "Works fine. I think..", price: "1000", location: "San Antonio, TX")
